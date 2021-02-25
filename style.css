@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.sondepremler {
+  max-width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sondepremler .container {
+  width: 100%;
+  height: auto;
+  padding: 5px 0px;
+  background-color: #222831;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sondepremler .container a {
+  text-decoration: underline;
+  color: #eee;
+  font-size: 18px;
+}
+.sondepremler .container h1 {
+  padding: 0px 10px;
+  color: #eeeeee;
+}
+.sondepremler .deprem {
+  max-width: 100%;
+  height: auto;
+  /* Remove IE arrow */
+  /* Custom Select */
+}
+.sondepremler .deprem table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.sondepremler .deprem table td {
+  text-align: center;
+  border: 1px solid #eee;
+  padding: 8px;
+}
+.sondepremler .deprem table .title {
+  text-align: left;
+}
+.sondepremler .deprem table th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  text-align: center;
+  border: 1px solid #eee;
+  padding-left: 8px;
+  padding-right: 9px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #222831;
+  color: white;
+}
+.sondepremler .deprem select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+.sondepremler .deprem select::-ms-expand {
+  display: none;
+}
+.sondepremler .deprem .select {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  border-radius: 0.25em;
+  margin: 20px 0px;
+}
+.sondepremler .deprem .select select {
+  width: 60em;
+  height: 3em;
+  padding: 0.5em;
+  color: #fff;
+  cursor: pointer;
+}
+.sondepremler .deprem .select input {
+  width: 100px;
+  height: 3.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.sondepremler .bos {
+  width: 100%;
+  height: 50px;
+  background: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5em;
+  margin-top: 50px;
+  padding: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #222831;
+}
+
+.yukari-cik {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  font-size: 35px;
+  color: #eee;
+  cursor: pointer;
+  text-shadow: 10px 20px 30px #222831;
+}
+
+.bilgilendirme {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.bilgilendirme a {
+  text-decoration: underline;
+  color: #ddd;
+}
+.bilgilendirme a:hover {
+  color: #fff;
+}
+.bilgilendirme .box {
+  width: 80%;
+  height: auto;
+  padding: 20px 10px;
+}
+.bilgilendirme .box h1 {
+  margin: 10px 0px;
+}
+.bilgilendirme .box hr {
+  margin: 10px 0px;
+}
+.bilgilendirme .box p {
+  margin: 10px 0px;
+}
+.bilgilendirme .box .linkler {
+  -webkit-box-align: left !important;
+      -ms-flex-align: left !important;
+          align-items: left !important;
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+  text-align: left !important;
+}
+.bilgilendirme .box .linkler h3 {
+  -webkit-box-align: left !important;
+      -ms-flex-align: left !important;
+          align-items: left !important;
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+  text-align: left !important;
+}
+.bilgilendirme .box .linkler p {
+  -webkit-box-align: left !important;
+      -ms-flex-align: left !important;
+          align-items: left !important;
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+  text-align: left !important;
+}
+.bilgilendirme .box .linkler p a {
+  -webkit-box-align: left !important;
+      -ms-flex-align: left !important;
+          align-items: left !important;
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+  text-align: left !important;
+}
+
+.deprem-aninda {
+  width: 100%;
+}
+
+.deprem_page {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.deprem_page .deprem_menu {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #222831;
+  color: #f2f2f2;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+.deprem_page .deprem_menu .nav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.deprem_page .deprem_menu .nav .title {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(17, 17, 17, 0.5);
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+.deprem_page .deprem_menu .nav .title .buyukluk {
+  background: #111111;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin-left: 10px;
+}
+.deprem_page .deprem_menu .nav .ts {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(17, 17, 17, 0.5);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin: 15px 0px;
+}
+.deprem_page .deprem_menu .nav .ts h4 {
+  font-size: 22px;
+  margin: 0px 15px;
+}
+.deprem_page .deprem_menu .nav .buyuklukler {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(17, 17, 17, 0.5);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin-bottom: 15px;
+}
+.deprem_page .deprem_menu .nav .buyuklukler .md {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #111111;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 10px;
+}
+.deprem_page .deprem_menu .nav .buyuklukler .ml {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #111111;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 10px;
+}
+.deprem_page .deprem_menu .nav .buyuklukler .mw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #111111;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 10px;
+}
+.deprem_page .deprem_menu .foo {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.deprem_page .deprem_menu .foo ul {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(17, 17, 17, 0.5);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.deprem_page .deprem_menu .foo ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #111111;
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 10px;
+}
+.deprem_page .deprem_menu .foo h4 {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(17, 17, 17, 0.5);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sondepremler .deprem .select select {
+    width: 20em;
+  }
+  .sondepremler .deprem table {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sondepremler .deprem table tr .tarih,
+.sondepremler .deprem table tr .saat {
+    display: none;
+  }
+  .sondepremler .deprem table tr td {
+    padding: 5px;
+  }
+}
